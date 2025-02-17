@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(6, 13, 56);
+}
+
+.nav-bar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 10px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: aliceblue;
+}
+
+.nav-bar img {
+   height: 40px;
+   width: auto;
+}
+
+.nav-list {
+display: flex;    
+}
+
+.nav-bar li {
+   text-decoration: none;
+   display: flex;
+   font-size: 1.2rem;
+   margin: 20px;
+   margin-bottom: 5px;
+   color: rgb(233, 228, 228);
+}
+
+.nav-bar li:hover {
+    color: rgb(153, 214, 243);
+    font-size: 1.5rem;
+}
+.nav-bar .search-button {
+  display: flex;
+  background-color: yellow;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-bar input {
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+
+
+.nav-bar .cart {
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(184, 204, 214);
+}
+
+/* home page */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 5px;
+    height: 565px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: auto;
+    background-color: #333;
+    background-repeat: no-repeat;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 565px;
+  }
+  
+.prev {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+  
+
+  .next
+ { position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /*shop by catergory */
+
+.shop {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.box-img ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+
+}
+
+.box-img ul li{
+    margin-right: 40px;
+    border: 2px solid black;
+    list-style-type: none;
+}
+
+.box-img img {
+    width: 100%;
+    height: 500px;
+}
+
+/* latest product */
+
+.new-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 1300px;
+    margin-left: 25px;
+}
+
+.latest-product {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+   
+}
+
+/* Container for the product image and the "new" tag */
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Styling for the "New" tag */
+  .new-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000; /* Red background for visibility */
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+/* Container for the image and rating */
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Styling for the image */
+  .image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px; /* Optional: To give the image rounded corners */
+    margin: 0;
+  }
+  
+  /* Rating stars */
+  .rating {
+    position: absolute;
+    bottom: 10px;
+ 
+    z-index: 1;
+    font-size: 24px;
+    color: gold;
+  }
+  
+  /* Individual star */
+  .star {
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+}
+
+  .product-name a {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+.rate {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+/* Container for the image with a shadow box */
+.all-container {
+    width: 340px; /* Set the width of the container */
+    height: 300px; /* Let the height adjust based on the image */
+    display: inline-block;
+    padding: 10px;
+    background-color: #fff; /* Optional: A background color to make the shadow box visible */
+    border-radius: 10px; /* Optional: Rounded corners for the shadow box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow around the image */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+    margin: 30px;
+  }
+  
+  /* Optional: Change shadow on hover */
+  .all-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Darker and larger shadow on hover */
+  }
+  
+  /* Styling for the image inside the shadow box */
+  .all-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+  }
+  
+
+  /* General styling for the feature box */
+
+  .our-featured {
+    padding: 20px;
+    background-color: #76d7e4;
+    box-shadow: 10px 10px 10px rgba(0.4, 0.1, 0.2, 0.3);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .feature-item {
+    width: 48%; /* Each feature takes up about half of the box */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(147, 211, 236);
+  }
+  
+  .feature-item h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .feature-item strong {
+    color: #27ae60; /* Green color for emphasis */
+  }
+  
+  @media (max-width: 768px) {
+    .feature-box {
+      flex-direction: column;
+    }
+  
+    .feature-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+.our-feature {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #27ae60; /* Green color on hover */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon i {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover i {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 30px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .footer-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+  
